@@ -1,0 +1,66 @@
+<!doctype html>
+<HTML lang=en>
+<!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">-->
+	<head> 
+		<meta charset=utf-8>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Jacob is a human</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" href="style.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	</head>
+    <body>
+
+    
+
+	<div class="navbar a">
+			<a href="#">me</a>
+	        <a href="#">photos</a>
+	</div>
+	    
+		<section>
+		
+  			<img class="myslides" src="/Users/JDP/Desktop/repos/Personal_Website/lucerne.jpg"style="width:100%">
+  			<img class="myslides" src="/Users/JDP/Desktop/repos/Personal_Website/lucernesunrise.jpg" style="width:100%">
+  			<img class="myslides" src="/Users/JDP/Desktop/repos/Personal_Website/mrecho.jpg" style="width:100%">
+  		    
+		</section>
+
+	
+	
+	<script>
+		// Automatic Slideshow - change image every 3 seconds
+		var myIndex = 0;
+		carousel();
+
+		function carousel() {
+    		var i;
+    		var x = document.getElementsByClassName("myslides");
+    		for (i = 0; i < x.length; i++) {
+       			x[i].style.display = "none";
+    		}
+    		myIndex++;
+    		if (myIndex > x.length) {myIndex = 1}
+    		x[myIndex-1].style.display = "block";
+    		setTimeout(carousel, 3000);
+		}
+	</script>
+	<div class="container-fluid bg-3 text-center">
+    	<!--<section class="w3-container w3-center" style="max-width:600px">-->
+  			<h2 class="w3-wide">Jacob Doering-Powell</h2>
+  			<p class="w3-opacity"><i>programming, biology, chemistry, photography</i></p>
+		<!--</section>-->
+	</div>
+
+	<div class="container-fluid bg-2 text-center">
+		<!--<section class="w3-container w3-center" style="max-width:600px"> -->
+			<p class="w3-wide">I am a second year UCSD student majoring in biochemistry and minoring in computer science. 
+
+			<p class="w3-wide">All photos were taken by me in various parts of the world.
+		<!--</section>-->
+	</div>
+
+	</body>
+</HTML>
