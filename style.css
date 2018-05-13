@@ -71,7 +71,7 @@ h1 {
 	overflow: hidden;
 	background-color: #333; /*dark color*/
     padding: 0px;
-    
+    margin: 0px;
 }
 
 .navbar a {
@@ -83,6 +83,7 @@ h1 {
     padding: 20px 30px;
 	text-decoration: none;
 	position: sticky;
+	margin: 0px;
 }
 
 .navbar a:hover {
