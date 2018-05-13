@@ -8,17 +8,29 @@
 		<meta charset=utf-8>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Jacob is a human</title>
+		<link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link href="product.css" rel="stylesheet">
 		<link rel="stylesheet" href="style.css">
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	</head>
     <body>
+
+    	 
 		<div class="navbar a">
 			<a href="/">me</a>
 	        <a href="#">photos</a>
 		</div>
 	    
+	    <!-- come back to change this, 
+	    <nav class="site-header sticky-top py-1">
+	    	<div class="container d-flex flex-column flex-md-row justify-content-between">
+	        	<a class="py-2 d-none d-md-inline-block" href="/">me</a>
+	        	<a class="py-2 d-none d-md-inline-block" href="#">photos</a>
+	        </div>
+	    </nav>
+	-->
+
+
 		<div class="container-fluid bg-3 text-center">
     		<!--<section class="w3-container w3-center" style="max-width:600px">-->
   				<h2 class="w3-wide">Jacob Doering-Powell</h2>
@@ -50,12 +62,30 @@
     			setTimeout(carousel, 3000);
 			}
 		</script>
-		<div class="container-fluid bg-2 text-center">
+		<div class="container-fluid bg-3 text-center">
 			<!--<section class="w3-container w3-center" style="max-width:600px"> -->
-				<p class="w3-wide">I am a second year UCSD student majoring in biochemistry and minoring in computer science. 
+				<p class="w3-wide font-large">I am a second year UCSD student majoring in biochemistry and minoring in computer science. 
 
 				<p class="w3-wide">All photos were taken by me in various parts of the world.
+
+				<p class="w3-wide">Feel free to contact me if you are interested in any of the aforementioned subjects or if you want to collaborate on a project.</p> 
 			<!--</section>-->
-		</div>	
+		</div>
+		<footer class="bg-2">
+			<div class="container">
+				<div class="row">
+					<div class="col-6 col-md">
+						<h4 class="text-white">Contact</h4>
+						<p class="w3-wide">
+
+						jdoering@ucsd.edu</p>
+					</div>
+				</div>	
+	        </div>
+	    </footer>
+
+	    <!-- Placed at end for faster loading -->
+	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	</body>
 </HTML>
