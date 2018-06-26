@@ -1,99 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,80');
 
-body {
-	margin: 0;
-	padding: 0;
-	background-color: #474e5d;
-    font-family: 'Open Sans', sans-serif; 
-
-}
-
-.bg-2 { 
-      background-color: #474e5d; /* Dark Blue */
-      color: #ffffff;
-      text-align: center;
-      font-size: 30px;
-}
-
-.bg-3 { 
-      background-color: #ffffff; /* White */
-      color: #555555;
-      text-align: center;
-      font-size: 20px;
-}
-
-.container-fluid {
-    padding-top: 100px;
-    padding-bottom: 100px;
-}
-
-h1 {
-
-	color: #FFFFE0;
-	font-weight: 300;
-	font-family: 'Open Sans', sans-serif;
-
-}
-
-#banner {
-
-	position: absolute;
-	top: 0;
-    left: 0;
-	background-color: #B0C4DE;
-    width: 100%
-
-}
-
-#banner-content {
-
-	width: auto;
-	padding: 10px;
-    border: 1px solid #000;
-
-}
-
-#banner-content ul {
-
-	list-style: none;
-  	margin: 0;
-  	padding: 0;
-
-}
-
-
-#banner-content li {
-
-	display: inline-block
-
-}
 
 .navbar {
 
-	overflow: hidden;
-	background-color: #333; /*dark color*/
-    padding: 0px;
-    margin: 0px;
+  margin-bottom: 20px
+
 }
 
-.navbar a {
+.blocktext {
 
-	float: left; /*side by side*/
-    display: block;
-	color: white; 
-	text-align: center; 
-    padding: 20px 30px;
-	text-decoration: none;
-	position: sticky;
-	margin: 0px;
+  margin-left: auto;
+  margin-right: auto;
 }
-
-.navbar a:hover {
-
-	background-color: #ddd; /*grey*/
-    color: black; /*for text*/
-    padding: 20px 30px
- 
-}
-
-
