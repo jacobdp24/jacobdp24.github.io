@@ -1,75 +1,147 @@
 <!doctype html>
-<HTML lang=en>
-<!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">-->
-	
-     
-	<head> 
-		<meta charset=utf-8>
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Jacob is a human</title>
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-		<link rel="stylesheet" href="style.css">
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	</head>
-    <body>
-		<div class="navbar a">
-			<a href="/">me</a>
-	        <a href="#">photos</a>
-		</div>
-	    
-		<div class="container-fluid bg-3 text-center">
-    		<!--<section class="w3-container w3-center" style="max-width:600px">-->
-  				<h2 class="w3-wide">Jacob Doering-Powell</h2>
-  				<p class="w3-opacity"><i>programming, biology, chemistry, photography</i></p>
-			<!--</section>-->
-		</div>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-		<section>
-		
-  			<img class="myslides" src="lucerne.jpg"style="width:100%">
-  			<img class="myslides" src="lucernesunrise.jpg" style="width:100%">
-  			<img class="myslides" src="mrecho.jpg" style="width:100%">
-  		    
-		</section>
-		<script>
-			// Automatic Slideshow - change image every 3 seconds
-			var myIndex = 0;
-			carousel();
+    <!-- old sheets -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
 
-			function carousel() {
-    			var i;
-    			var x = document.getElementsByClassName("myslides");
-    			for (i = 0; i < x.length; i++) {
-       				x[i].style.display = "none";
-    			}
-    			myIndex++;
-    			if (myIndex > x.length) {myIndex = 1}
-    			x[myIndex-1].style.display = "block";
-    			setTimeout(carousel, 3000);
-			}
-		</script>
-		<div class="container-fluid bg-3 text-center">
-			<!--<section class="w3-container w3-center" style="max-width:600px"> -->
-				<p class="w3-wide">I am a second year UCSD student majoring in biochemistry and minoring in computer science. 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
-				<p class="w3-wide">All photos were taken by me in various parts of the world.
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
 
-				<p class="w3-wide">Feel free to contact me about any of the subjects mentioned above, or if you want to collaborate on a project.</p>
-			<!--</section>-->
-		</div>	
-		<footer class="bg-2">
-			<div class="container">
-				<div class="row">
-					<div class="column"
-						<h4 class="text-white">Contact</h4>
-						<ul class="list-unstyled">
-							<li>jdoering@ucsd.edu</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</footer>
-	</body>
-</HTML>
+     <link rel="stylesheet" href="test-style.css">
+
+
+
+    <!-- old bootstrap -->
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">-->
+
+
+
+    <title>Jacob Doering-Powell</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="mailto:jdoering@ucsd.edu">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Resume</a>
+                </li>
+            </ul>
+        </div>
+        <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="navbar-brand" href="https://www.linkedin.com/in/jacob-doering-powell-a03651123/"><i class="fa fa-linkedin"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="navbar-brand" href="https://github.com/jacobdp24"><i class="fa fa-github"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="navbar-brand" href="https://www.instagram.com/jacobdp/"><i class="fa fa-instagram"></i></a>
+                </li>
+            </ul>
+        </div>
+    </nav>  
+    <div class="container-fluid">
+        <div class="row">
+            <div class="blocktext">
+                    
+                <h2 align="center">Jacob Doering-Powell</h2>
+                <p align="center">programming | biology | chemistry | photography</p>
+                    
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        
+        <div class="row-i">
+        
+            <div class="column-i">
+    
+                <img src="./photos/sunset_cliffs.jpg" style="width: 100%; height: auto">
+                <img src="./photos/owl_butterfly.jpg" style="max-width: 100%; height: auto">
+                <img src="./photos/lucernesunrise.jpg" style="max-width: 100%; height: auto">
+                <img src="./photos/mrecho.jpg" style="max-width: 100%; height: auto">
+                <img src="./photos/channel_islands.jpg" style="max-width: 100%; height: auto">
+                <img src="./photos/grindelwald.jpg" style="max-width: 100%; height: auto">
+                        
+            </div>
+                
+            <div class="column-i">
+            
+                <img src="./photos/lucerne.jpg" style="max-width: 100%; height: auto">
+                <img src="./photos/german_field.jpg" style="max-width: 100%; height: auto">
+                <img src="./photos/double.jpg" style="max-width: 100%; height: auto">
+                <img src="./photos/cat.jpg" style="max-width: 100%; height: auto">
+                <img src="./photos/brandon.jpg" style="max-width: 100%; height: auto">
+                <img src="./photos/best_sunset.jpg" style="max-width: 100%; height: auto">
+            </div>
+        </div>
+    </div>
+    <section class="wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+
+                    <span><i class="fa fa-camera-retro fa-5x"></i></span>
+                    <h3>Photos</h3>
+
+                    <p>I enjoy film photography, and I shoot with a Canon AE-1. Follow my instagram for more photos.</p>
+
+                </div>
+                <div class="col-md-6">
+
+                    <span><i class="fa fa-globe fa-5x"></i></span>
+                    <h3>Me</h3>
+                    <p>I'm a second year student at the University of California San Diego, and I am studying Biochemistry and Computer Science. I mostly program in python and java. Feel free to contact me if you want to collaborate on a project, or follow me on any of the social media links supplied.</p>                
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer.nav">
+
+               <nav class="navbar navbar-expand-md navbar-dark bg-dark" width="100%">
+        <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="mailto:jdoering@ucsd.edu">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Resume</a>
+                </li>
+            </ul>
+        </div>
+        <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="navbar-brand" href="https://www.linkedin.com/in/jacob-doering-powell-a03651123/"><i class="fa fa-linkedin"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="navbar-brand" href="https://github.com/jacobdp24"><i class="fa fa-github"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="navbar-brand" href="https://www.instagram.com/jacobdp/"><i class="fa fa-instagram"></i></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+        
+    
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+  </body>
+</html>
