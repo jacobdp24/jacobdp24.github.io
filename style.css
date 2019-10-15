@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,80');
 
+html {	
+	background-color: #fcf9ea;
+}
 
 h2,
 h3 {
@@ -10,15 +13,40 @@ h3 {
 
 .navbar {
 
-	margin-bottom: 20px
+	margin-bottom: 0px
 
 }
 
-.blocktext {
+a:link {
+	color: #ffc5a1;
+}
 
+a:visited {
+	color: #ffc5a1;
+}
+
+a:hover {
+	color: #badfdb;
+}
+
+.blocktext {
+	background-color: #fcf9ea;
+	color: #f8a978;
+	margin: auto;
+}
+
+article {
+	margin:1em auto;
+	max-width:40em;
+	padding:0 .62em;
+	font:1.2em/1.62 sans-serif;
+}
+.center_information {
 	margin-left: auto;
 	margin-right: auto;
-	background-color: white;
+	margin-bottom: auto;
+	margin-top: auto;
+	padding: 225px;
 }
 
 /* two equal colums */
@@ -37,42 +65,17 @@ h3 {
 
 }
 
-.row-i {
-
-	background-color: white;
+.row {
+	color: #f8a978;
+	background-color: #fcf9ea;
 	display: flex;
 	flex-wrap: wrap;
-	padding: 0 4px;
 }
 
-.wrapper {
 
-	
-	background-color: white;
+
+.wrapper {
 	margin-top: 20px;
 	text-align: center;
 	font-family: sans-serif;
-
-}
-
-.footer-nav {
-
-	background-color: gray;
-	/*overflow: hidden;*/
-	color: black;
-	
-
-
-	margin-top: 20px;
-	margin-bottom: 0;
-	
-	bottom: 0;
-
-	width: 100%;
-
-}
-
-.row {
-
-	width: 100%;
 }
