@@ -2,6 +2,10 @@ import logo from './logo.svg';
 import './Home.css';
 import React, { useEffect, useState } from "react";
 import styled, { css } from 'styled-components'
+import { Outlet, Link } from 'react-router-dom';
+import Resume from "./resume"
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+
 
 const Button = styled.button`
   background: none;
@@ -45,12 +49,12 @@ function Home() {
       <Container darkMode={darkMode}>
           <Header align="center">Jacob Doering-Powell</Header>
           <Content align="center">
-            <a href="https://github.com/jacobdp24">programming</a> | <a href="resume.html">resume</a> | <a href="photos.html">photography</a>
+            <a href="https://github.com/jacobdp24">programming</a> | <Link to='/resume' state={{darkMode: darkMode}} >resume</Link> | <a href="photos.html">photography</a>
           </Content>    
           {darkMode ? <Button darkMode onClick={changeDarkMode}>🌞</Button> 
                     : <Button darkMode onClick={changeDarkMode}>🌚</Button>
           }
-        
+          <Outlet />
       </Container>
   );
 }
