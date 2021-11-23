@@ -1,58 +1,68 @@
 import logo from './logo.svg';
 import './Home.css';
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useContext } from "react";
 import styled, { css } from 'styled-components'
-import { Outlet, Link } from 'react-router-dom';
+import { Outlet, Link, useNavigate, useNavigationType} from 'react-router-dom';
 import Resume from "./resume"
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { Button, Container, Header, Content } from './styled_components'
+import { useLocation } from 'react-router-dom'
+import { createBrowserHistory } from 'history';
+import { Context } from './ThemeContext'
 
-
-const Button = styled.button`
-  background: none;
-  border-radius: 3px;
-  font-size:40px;
-  border:none;
-  margin:10px;
-  padding:0;
-  cursor: pointer;
-`
-
-const Container = styled.div`
-  padding: 40px;
-  font-family: Arial;
-  text-align: center;
-  position: absolute; 
-  top: 0; 
-  right: 0; 
-  bottom: 0; 
-  left: 0;
-  background-color: ${ ({darkMode}) => (darkMode ? '#191A19': '#FEF5ED')};
-  color: ${ ({darkMode}) => (darkMode ? '#d8e9a8': '#ADC2A9')};
-`
-const Header = styled.h1`
-  font-weight: bold;
-  font-size:50px
-`
-
-const Content = styled.p`
-  font-size:30px
-`
 
 function Home() {
-  const [darkMode, setDarkMode] = useState(true);
+  // const [darkMode, setDarkMode] = useState(true);
+  const [darkModeContext, dispatch] = useContext(Context);
+  let navigate = useNavigate();
+  let navType = useNavigationType();
+  const location = useLocation()
+  let history = createBrowserHistory();
 
+  // useEffect(() => {
+  //   let unlisten = history.listen(({ location, action }) => {
+  //       console.log("in home")
+  //       console.log(action, location.pathname, location.state);
+  //       if (location.state) {
+  //           console.log("location state in useEffect")
+            
+  //       }
+  //       navigate(location.pathname, {state: {darkMode: darkMode}})
+  //       // window.location.reload(true);
+  //   });
+  // })
+
+
+
+
+  // let toSet = true
+  // if (location.state) {
+  //     console.log("has location.state")
+  //     console.log(location.state.darkMode)
+  //     // console.log(navType)
+  //     // if (navType === "POP") {
+  //     //     console.log('pop')
+  //     // }
+  //     toSet = location.state.darkMode
+  // } else {
+  //     toSet = true
+  // }
+  
   const changeDarkMode = () => {
-    setDarkMode(!darkMode);
+    // setDarkMode(!darkMode);
+    let newDarkMode = !darkModeContext.darkmode;
+    dispatch({type: 'UPDATE_THEME', darkmode: newDarkMode})
   }
+  
 
   return (
-      <Container darkMode={darkMode}>
+      <Container darkMode={darkModeContext.darkmode}>
           <Header align="center">Jacob Doering-Powell</Header>
           <Content align="center">
-            <a href="https://github.com/jacobdp24">programming</a> | <Link to='/resume' state={{darkMode: darkMode}} >resume</Link> | <a href="photos.html">photography</a>
+            <a href="https://github.com/jacobdp24">programming</a> | <Link to='/resume' state={{darkMode: darkModeContext.darkmode}} >resume</Link> | <a href="photos.html">photography</a>
           </Content>    
-          {darkMode ? <Button darkMode onClick={changeDarkMode}>🌞</Button> 
-                    : <Button darkMode onClick={changeDarkMode}>🌚</Button>
+          {darkModeContext.darkmode ? <Button darkMode onClick={changeDarkMode}><span role="img" aria-label="smiling_sun">🌞</span></Button> 
+                    : <Button darkMode onClick={changeDarkMode}><span role="img" aria-label="smiling_moon">🌚</span></Button>
           }
           <Outlet />
       </Container>

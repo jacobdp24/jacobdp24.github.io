@@ -4,6 +4,7 @@ import './index.css';
 import Home from './Home';
 import Resume from "./resume"
 import reportWebVitals from './reportWebVitals';
+import ThemeContext from "./ThemeContext";
 import {
   BrowserRouter,
   Routes,
@@ -12,12 +13,14 @@ import {
 
 ReactDOM.render(
   <React.StrictMode>
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Home />} />
-          <Route path="/resume" element={<Resume/>} />
-      </Routes>
-    </BrowserRouter>
+    <ThemeContext>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />} />
+            <Route path="/resume" element={<Resume/>} />
+        </Routes>
+      </BrowserRouter>
+    </ThemeContext>
   </React.StrictMode>,
   document.getElementById('root')
 );
