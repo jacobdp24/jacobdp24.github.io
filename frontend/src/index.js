@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import Home from './Home';
 import Resume from "./resume"
+import PhotoPage from "./PhotoPage"
 import reportWebVitals from './reportWebVitals';
 import ThemeContext from "./ThemeContext";
 import {
@@ -18,6 +19,7 @@ ReactDOM.render(
         <Routes>
           <Route path="/" element={<Home />} />
             <Route path="/resume" element={<Resume/>} />
+            <Route path="/photos" element={<PhotoPage/>} />
         </Routes>
       </BrowserRouter>
     </ThemeContext>
