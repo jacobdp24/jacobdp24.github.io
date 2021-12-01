@@ -6,6 +6,7 @@ import { Article, BackgroundFill, Button} from './styled_components';
 import { Context } from './ThemeContext';
 import sunset_cliffs from "./photos/sunset_cliffs.jpg";
 import { Container, Row, Col, Image} from "react-bootstrap";
+import PhotoRow from "./PhotoRow"
 
 function importAll(r) {
     let images = {};
@@ -29,19 +30,13 @@ const PhotoPage = () => {
     
     return (
         <BackgroundFill darkMode={darkMode}>
-            {/* <div className="container-fluid"> */}
             <Container fluid >
-                <Row>
-                    <Col style={{width: "50%", height: "100%", marginTop: '8px', verticalAlign: 'middle', float: 'left', padding: '0 4px'}}>
-                        {/* <img src={photos['sunset_cliffs.jpg']} style={{width: "100%", height: "auto"}}></img> */}
-                        <Image src={photos['sunset_cliffs.jpg']} fluid style={{width: "100%", height: "auto"}}/>
-                        {/* <img src={photos['sunset_cliffs.jpg']} style={{width: "100%", height: "auto"}} /> */}
-                    </Col>
-                    <Col style={{width: "50%", height: "100%", marginTop: '8px', verticalAlign: 'middle', float: 'right', padding: '0 4px'}}>
-                        <Image src={photos['lucerne.jpg']} fluid style={{width: "100%", height: "auto"}} />
-
-                    </Col>
-                </Row>
+                <PhotoRow left={'sunset_cliffs.jpg'} right={'lucerne.jpg'}/>
+                <PhotoRow left={'owl_butterfly.jpg'} right={'german_field.jpg'}/>
+                <PhotoRow left={'lucernesunrise.jpg'} right={'double.jpg'}/>
+                <PhotoRow left={'mrecho.jpg'} right={'cat.jpg'}/>
+                <PhotoRow left={'channel_islands.jpg'} right={'brandon.jpg'}/>
+                <PhotoRow left={'grindelwald.jpg'} right={'best_sunset.jpg'}/>
             </Container>
         </BackgroundFill> 
     );
