@@ -11,7 +11,8 @@
 } */
 
 a:link {
-	color: #1E5128;
+  color: #1E5128;
+	
 }
 
 a:visited {
@@ -19,7 +20,7 @@ a:visited {
 }
 
 a:hover {
-	color: #4E9F3D;
+  color: #4E9F3D;
 }
 
 /* .center_information {

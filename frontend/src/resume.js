@@ -14,14 +14,13 @@ const Resume = () => {
     const changeDarkMode = () => {
         setDarkMode(!darkMode);
         let newDarkMode = !darkModeContext.darkmode;
-        // let newDarkMode = !darkMode;
         dispatch({type: 'UPDATE_THEME', darkmode: newDarkMode})
     }
     
     return (
         <BackgroundFill darkMode={darkMode}>
             <Article darkMode={darkMode}>
-                <Link to='/' state={{darkMode: darkMode}}>
+                <Link to='/' state={{darkMode: darkMode}} style={{ textDecoration: 'none' }}>
                     <div style={{top: ".3em"}}>
                         <h1 style={{marginTop: '-20px'}}>Jacob Doering-Powell</h1>
                     </div>
@@ -57,9 +56,11 @@ const Resume = () => {
                 <ul>
                     <li><b><a href="https://pypi.org/project/pmbec/">PMBEC python package</a></b> - immunoinformatics package to make peptide to MHC binding energy covariance matrices.</li>
                 </ul>
-                {darkMode ? <Button darkMode onClick={changeDarkMode}><span role="img" aria-label="smiling_sun">🌞</span></Button> 
-                    : <Button darkMode onClick={changeDarkMode}><span role="img" aria-label="smiling_moon">🌚</span></Button>
-                }
+                <div style={{textAlign:'center'}}>
+                    {darkMode ? <Button darkMode onClick={changeDarkMode}><span role="img" aria-label="smiling_sun">🌞</span></Button> 
+                        : <Button darkMode onClick={changeDarkMode}><span role="img" aria-label="smiling_moon">🌚</span></Button>
+                    }
+                </div>
             </Article>
         </BackgroundFill>
     );

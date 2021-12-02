@@ -1,12 +1,14 @@
 const Reducer = (state, action) => {
     switch (action.type) {
         case 'UPDATE_THEME':
-            console.log(JSON.stringify(action))
+            console.log('update theme ' + JSON.stringify(action))
             return {
                 ...state,
                 darkmode: action.darkmode
             };
-            default: return state;
+        default:
+            console.log('Default ' + JSON.stringify(action))
+            return state;
     };
 };
 
