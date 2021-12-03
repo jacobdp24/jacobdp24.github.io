@@ -6,8 +6,6 @@ import { Outlet, Link, useNavigate, useNavigationType} from 'react-router-dom';
 import Resume from "./resume"
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { Button, Container, Header, Content } from './styled_components'
-import { useLocation } from 'react-router-dom'
-import { createBrowserHistory } from 'history';
 import { Context } from './ThemeContext'
 
 
