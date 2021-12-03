@@ -19,7 +19,6 @@ function Home() {
   
   const changeDarkMode = () => {
     setDarkMode(!darkMode);
-    // let newDarkMode = !darkModeContext.darkmode;
     let newDarkMode = !darkMode
     dispatch({type: 'UPDATE_THEME', darkmode: newDarkMode})
   }

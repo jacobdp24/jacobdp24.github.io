@@ -19,8 +19,8 @@ export const Container = styled.div`
   right: 0; 
   bottom: 0; 
   left: 0;
-  background-color: ${ ({darkMode}) => (darkMode ? '#191A19': '#FEF5ED')};
-  color: ${ ({darkMode}) => (darkMode ? '#d8e9a8': '#ADC2A9')};
+  background-color: ${ ({darkMode}) => (darkMode ? '#191A19': '#f5f6f7')};
+  color: ${ ({darkMode}) => (darkMode ? '#d8e9a8': '#1c1e21')};
 `
 export const Header = styled.h1`
   font-weight: bold;
@@ -37,12 +37,12 @@ export const Article = styled.article`
     font:1.2em/1.62 sans-serif;
     right: 0; 
     left: 0;
-    background-color: ${ ({darkMode}) => (darkMode ? '#191A19': '#FEF5ED')};
-    color: ${ ({darkMode}) => (darkMode ? '#d8e9a8': '#ADC2A9')};
+    background-color: ${ ({darkMode}) => (darkMode ? '#191A19': '#f5f6f7')};
+    color: ${ ({darkMode}) => (darkMode ? '#d8e9a8': '#1c1e21')};
 `
 export const BackgroundFill = styled.div`
     display: flex;
     justify-content: center;
-    background-color: ${ ({darkMode}) => (darkMode ? '#191A19': '#FEF5ED')};
-    color: ${ ({darkMode}) => (darkMode ? '#d8e9a8': '#ADC2A9')};
+    background-color: ${ ({darkMode}) => (darkMode ? '#191A19': '#f5f6f7')};
+    color: ${ ({darkMode}) => (darkMode ? '#d8e9a8': '#1c1e21')};
 `

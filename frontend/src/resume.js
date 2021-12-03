@@ -38,13 +38,12 @@ const Resume = () => {
                 <h3>Engineering Principles</h3>
                 <ul>
                     <li><b>Simple solutions first</b>, use them as a baseline for adding complexity later.</li>
-                    <li><b>Long and expressive variable names</b>, lose time writing, gain time with readability, comprehension, and collaboration.</li>
-                    <li><b>If it's done more than once write a function</b>, enhance readability and abstraction.</li>
-                    <li><b>Meaningful function names</b>, if a function does not do what the name implies, it is a poor abstraction</li>
+                    <li><b>Long and expressive variable names</b>, helps people read and understand code.</li>
+                    <li><b>Strive for a perfect system</b>, always think about how people will use and understand it further down the arrow of time.</li>
                 </ul>
                 <h3>Work Experience</h3>
                 <ul>
-                    <li><b><a href="https://www.empiricotx.com/">Empirico</a></b> Bioinformatics Engineering @San Diego. Bioinformatics and Software development for finding drug targets with translational genetics</li>
+                    <li><b><a href="https://www.empiricotx.com/">Empirico</a></b> Bioinformatics Engineering @San Diego. Building bioinformatics and software tools for finding drug targets with translational genetics</li>
                     <li><b><a href="https://www.lji.org/faculty-research/labs/peters/#overview">Peters Lab</a></b> Machine Learning @LJI. IEDB peptide to MHC-I prediction tools development.</li>
                     <li><b><a href="https://www.momentive.ai/en/">Momentive</a></b> @San Mateo. Software Engineering Intern on the SurveyPlatform Automation team.</li>
                     <li><b>City of San Diego</b> @Sustainability Department. Software Engineering Intern. Automated the collection, cleaning, and distribution of energy data.</li>
