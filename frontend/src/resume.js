@@ -4,6 +4,7 @@ import { useLocation, useNavigate, Outlet, Link} from 'react-router-dom'
 import "./resume.css";
 import { Article, BackgroundFill, Button} from './styled_components'
 import { Context } from './ThemeContext'
+import {pdfResume} from "./resume/Jacob_Doering-Powell_resume.pdf";
 
 const Resume = () => {
 
@@ -25,6 +26,9 @@ const Resume = () => {
                         <h1 style={{marginTop: '-20px'}}>Jacob Doering-Powell</h1>
                     </div>
                 </Link>
+                <ul>
+                    <a href={require("./resume/Jacob_Doering-Powell_resume.pdf")} target="_blank"><li><b>View Full Resume</b></li></a>
+                </ul>
                 <ul id="navbar">
                     <a href="https://github.com/jacobdp24"><li><b>Github Link</b></li></a>
                 </ul>
@@ -33,7 +37,7 @@ const Resume = () => {
                 <p>Computer Science, Bioinformatics, Cheminformatics, Hiking, Photography, Traveling</p>
                 <h3>Education</h3>
                 <ul>
-                    <li><b>BSc.</b> Computer Science w/ a specialization in Bioinformatics. University of California, San Diego. [3.7 GPA] [Dec 2020]</li>
+                    <li><b>B.S.</b> Computer Science w/ a specialization in Bioinformatics. University of California, San Diego. [3.68 GPA] [Dec 2020]</li>
                 </ul>
                 <h3>Engineering Principles</h3>
                 <ul>
