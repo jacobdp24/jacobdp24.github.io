@@ -41,11 +41,6 @@ const PhotoPage = () => {
               <h1>Jacob Doering-Powell</h1>
             </div>
           </Link>
-          {/* <div style={{margin: '-5px', marginLeft: '20px'}}>
-                    {darkMode ? <Button darkMode onClick={changeDarkMode}><span role="img" aria-label="smiling_sun">🌞</span></Button> 
-                        : <Button darkMode onClick={changeDarkMode}><span role="img" aria-label="smiling_moon">🌚</span></Button>
-                    }
-                </div> */}
           <div
             style={{
               margin: "-5px",
