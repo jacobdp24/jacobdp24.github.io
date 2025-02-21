@@ -26,15 +26,20 @@ const Resume = () => {
                         <h1 style={{marginTop: '-20px'}}>Jacob Doering-Powell</h1>
                     </div>
                 </Link>
-                <ul>
+                {/* <ul>
                     <a href={require("./resume/Jacob_Doering-Powell_resume.pdf")} target="_blank"><li><b>View Full Resume</b></li></a>
+                </ul> */}
+
+                <ul id="navbar">
+                    <a href="https://www.linkedin.com/in/jacob-doering-powell-a03651123/
+"><li><b>linkedin</b></li></a>
                 </ul>
                 <ul id="navbar">
                     <a href="https://github.com/jacobdp24"><li><b>Github Link</b></li></a>
                 </ul>
                 <p>I can be reached at jacobdoeringpowell(at)gmail(dot)com</p>
                 <h3>Interests</h3>
-                <p>Computer Science, Bioinformatics, Cheminformatics, Hiking, Photography, Traveling</p>
+                <p>I love programming, taking my dog to the beach, lifting weights, photography, hiking, traveling, playing basketball. Keeping my life as simple as possible.</p>
                 <h3>Education</h3>
                 <ul>
                     <li><b>B.S.</b> Computer Science w/ a specialization in Bioinformatics. University of California, San Diego. [3.68 GPA] [Dec 2020]</li>
@@ -43,11 +48,14 @@ const Resume = () => {
                 <ul>
                     <li><b>Simple solutions first</b>, use them as a baseline for adding complexity later.</li>
                     <li><b>Long and expressive variable names</b>, helps people read and understand code.</li>
-                    <li><b>Strive for a perfect system</b>, always think about how people will use and understand it further down the arrow of time.</li>
+                    <li><b>Find low hanging fruit</b>, high impact features with wide breadth can be found in most systems.</li>
+                    <li><b>Remove code duplication wherever possible</b>, make a function or class, put it in a library and simplify your life.</li>
+                    <li><b>Set a standard when there is none</b>, make your life easier when you want to build.</li>
                 </ul>
                 <h3>Work Experience</h3>
                 <ul>
-                    <li><b><a href="https://www.empiricotx.com/">Empirico</a></b> Bioinformatics Engineering @San Diego. Building bioinformatics and software tools for finding drug targets with translational genetics</li>
+                    <li><b><a href="https://www.calicolabs.com">Calico Life Sciences</a></b> Data and Software Engineering @San Francisco. Creating scalable, high-performance data systems to drive cutting-edge biological research.</li>
+                    <li><b><a href="https://www.empiricotx.com/">Empirico</a></b> Bioinformatics Engineering @San Diego. Built bioinformatics and software tools for finding drug targets with translational genetics</li>
                     <li><b><a href="https://www.lji.org/faculty-research/labs/peters/#overview">Peters Lab</a></b> Machine Learning @LJI. IEDB peptide to MHC-I prediction tools development.</li>
                     <li><b><a href="https://www.momentive.ai/en/">Momentive</a></b> @San Mateo. Software Engineering Intern on the SurveyPlatform Automation team.</li>
                     <li><b>City of San Diego</b> @Sustainability Department. Software Engineering Intern. Automated the collection, cleaning, and distribution of energy data.</li>
