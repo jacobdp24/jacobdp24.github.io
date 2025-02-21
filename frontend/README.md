@@ -1,5 +1,7 @@
 # Running the Project Locally
 
+cd into the frontend directory
+
 If you encounter an error related to OpenSSL (e.g., ERR_OSSL_EVP_UNSUPPORTED), you need to set the OpenSSL legacy provider to enable certain cryptographic algorithms.
 
 Set the environment variable by running:
