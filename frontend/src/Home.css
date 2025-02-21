@@ -1,0 +1,17 @@
+.Home {
+  text-align: left;
+}
+
+
+a:link {
+  color: #1E5128;
+	
+}
+
+a:visited {
+	color: #1E5128;
+}
+
+a:hover {
+  color: #4E9F3D;
+}
