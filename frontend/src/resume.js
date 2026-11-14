@@ -61,31 +61,15 @@ const Resume = () => {
             University of California, San Diego. [3.68 GPA] [Dec 2020]
           </li>
         </ul>
-        <h3>Engineering Principles</h3>
-        <ul>
-          <li>
-            <b>Simple solutions first</b>, use them as a baseline for adding
-            complexity later.
-          </li>
-          <li>
-            <b>Long and expressive variable names</b>, helps people read and
-            understand code.
-          </li>
-          <li>
-            <b>Find low hanging fruit</b>, high impact features with wide
-            breadth can be found in most systems.
-          </li>
-          <li>
-            <b>Remove code duplication wherever possible</b>, make a function or
-            class, put it in a library and simplify your life.
-          </li>
-          <li>
-            <b>Set a standard when there is none</b>, always easier to improve
-            upon a system with a standard.
-          </li>
-        </ul>
         <h3>Work Experience</h3>
         <ul>
+          <li>
+            <b>
+              <a href="https://www.abridge.com">Abridge AI</a>
+            </b>{" "}
+            Member of Technical Staff @San Francisco. Building scalable
+            de-identification systems to train models that help clinicians.
+          </li>
           <li>
             <b>
               <a href="https://www.calicolabs.com">Calico Life Sciences</a>
